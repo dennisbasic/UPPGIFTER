@@ -1,0 +1,67 @@
+//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
+
+//namespace E1
+//{
+//    class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            Console.WriteLine("Skriv in det första heltalet");
+//            int tal1 = int.Parse(Console.ReadLine());
+//            Console.WriteLine("Skriv in det andra heltalet");
+//            int tal2 = int.Parse(Console.ReadLine());
+
+//            int svar1 = tal1 * tal2;
+//            int svar2 = tal1 / tal2;
+//            int svar3 = tal1 + tal2;
+//            int svar4 = tal1 - tal2;
+//            Console.WriteLine("{0} * {1} = {2} ", tal1, tal2, svar1);
+//            Console.WriteLine("{0} / {1} = {2} ", tal1, tal2, svar2);
+//            Console.WriteLine("{0} + {1} = {2} ", tal1, tal2, svar3);
+//            Console.WriteLine("{0} - {1} = {2} ", tal1, tal2, svar4);
+//        }
+//    }
+//}
+
+//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
+
+//namespace E2
+//{
+//    class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            Console.WriteLine("Ange bredden på ditt rum i centimeter");
+//            int bredd = int.Parse(Console.ReadLine());
+//            Console.WriteLine("Ange längden på ditt rum i centimeter");
+//            int längd = int.Parse(Console.ReadLine());
+
+//            int area = bredd * längd;
+//            int omkrets = bredd + bredd + längd + längd;
+//            Console.WriteLine("Arean på ditt rum är: {0} cm^2 och omkreten är: {1}cm", area, omkrets);
+
+//        }
+//    }
+//}
+
+namespace E3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int fast_avgift = 1250;
+            int kWh = 160;
+            int förbrukning = int.Parse(Console.ReadLine());
+
+        }
+    }
+}
