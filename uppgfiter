@@ -52,16 +52,41 @@
 //    }
 //}
 
+//Skriv ett program, som beräknar elavgiften för ett kvartal. Programmet skall börja
+//med att fråga efter mätarställning dels nu och dels vid föregående avläsning.
+//Kostnaden beräknas sedan enligt formeln
+//Totalkostnad = kWhpris * förbrukning + fast avgift.
+//Fast avgift och kWhpris deklareras som konstanter.
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
 namespace E3
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int fast_avgift = 1250;
-            int kWh = 160;
-            int förbrukning = int.Parse(Console.ReadLine());
-
+            double fast_avgift = 100;
+            double Wh = 0.001;
+            string ja = "ja";
+            int kvarttal = 4;
+            do
+            {
+                Console.WriteLine("Hur mycket el förbrukade du mellan 2017 och 2018 i WATT?");
+                double förbrukning = double.Parse(Console.ReadLine());
+                Console.WriteLine("Är du säker på att du förbrukat {0}W (ja/nej)?", förbrukning);
+                ja = Console.ReadLine();
+                if (ja == "ja")
+                {
+                    double kostnad = (Wh * förbrukning / kvarttal) + fast_avgift;
+                    double kostnadutanfastavgift = Wh * förbrukning / kvarttal;
+                    Console.WriteLine("{0}W kommer att kosta dig: {1}kr varje kvarttal eller {2}kr om man räknar bort den fasta avgiften.", förbrukning, kostnad, kostnadutanfastavgift);
+                }
+            } while (ja != "ja");
         }
     }
 }
